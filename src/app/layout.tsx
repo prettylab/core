@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Metadata } from "next";
+import Providers from "@/components/Provider/Providers";
 
 type Props = {
   children: ReactNode;
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
 export default function Layout({ children }: Props) {
   return (
     <html lang="pl">
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

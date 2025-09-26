@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
+import ThemeProvider from "@/components/Provider/ThemeProvider";
 
 type Props = {
   children: ReactNode;
@@ -12,7 +13,7 @@ export default function Providers({ children }: Props) {
         key: "css",
       }}
     >
-      {children}
+      <ThemeProvider>{children}</ThemeProvider>
     </AppRouterCacheProvider>
   );
 }

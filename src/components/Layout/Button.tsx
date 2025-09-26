@@ -10,6 +10,7 @@ interface Props {
   href?: string;
   tooltip?: string;
   disabledTooltip?: string;
+  target?: string;
 }
 
 export default function Button({
@@ -18,6 +19,7 @@ export default function Button({
   href,
   tooltip,
   disabledTooltip,
+  target,
   ...props
 }: Props & ButtonProps) {
   let body = (
@@ -36,6 +38,7 @@ export default function Button({
             event.preventDefault();
           }
         }}
+        target={target}
       >
         {body}
       </Link>

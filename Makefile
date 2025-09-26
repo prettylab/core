@@ -26,4 +26,4 @@ dev:
 #MANAGEMENT
 update:
 	make build-app
-	echo -e "\033[32mAktualizacja zakończona teraz uruchom aplikacje \033[33mmake up\033[0m"
+	@echo -e "\033[32mAktualizacja zakończona teraz uruchom aplikacje \033[33mmake up\033[0m"

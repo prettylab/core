@@ -1,1 +1,1 @@
-# dance-panel
+# Dance panel

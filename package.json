@@ -9,7 +9,8 @@
     "lint": "eslint",
     "pm2": "pm2 start npm --name dance-panel -- start",
     "pm2:stop": "pm2 stop dance-panel",
-    "pm2:delete": "pm2 delete dance-panel"
+    "pm2:delete": "pm2 delete dance-panel",
+    "pm2:monitor": "pm2 monit"
   },
   "dependencies": {
     "next": "15.5.4",

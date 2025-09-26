@@ -33,29 +33,30 @@ init:
 	make run-database
 	make build-app
 	make run-app
-	@echo "\033[32mUruchom aplikację \033[33mmake up\033[0m"
+	@echo "\\n\033[32m○  Uruchom aplikację \033[33mmake up\033[0m"
 
 update:
 	make build-app
-	@echo "\033[32mAktualizacja zakończona teraz uruchom aplikacje \033[33mmake up\033[0m"
+	@echo "\\n\033[32m○  Aktualizacja zakończona teraz uruchom aplikacje \033[33mmake up\033[0m"
 
 up:
 	make run-database
 	make stop-app
 	make run-app
-	@echo "\033[32mAplikacja uruchomiona\033[0m"
+	@echo "\\n\033[32m○  Aplikacja uruchomiona\033[0m"
+	make monitor
 
 stop:
 	make stop-database
 	make stop-app
-	@echo "\033[31mAplikacja zatrzymana\033[0m"
+	@echo "\\n\033[31m○  Aplikacja zatrzymana\033[0m"
 
 restart:
 	make stop-database
 	make stop-app
 	make run-database
 	make run-app
-	@echo "\033[32mAplikacja została zrestartowana\033[0m"
+	@echo "\\n\033[32m○  Aplikacja została zrestartowana\033[0m"
 
 monitor:
 	npm run pm2:monitor

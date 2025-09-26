@@ -13,6 +13,7 @@ build-app:
 	npm run build
 
 run-app:
+	make stop-app
 	npm run pm2
 
 stop-app:

@@ -12,7 +12,7 @@ next-env.d.ts
 
 #ENV files
 docker/.env
-.env
+src/env.ts
 
 #DB Stuff
 docker/mariadb

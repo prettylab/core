@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev -p 4000 --turbopack",
     "build": "next build --turbopack",
-    "start": "next start",
+    "start": "next start -p 4000",
     "lint": "eslint",
     "pm2": "pm2 start npm --name dance-panel -- start",
     "pm2:stop": "pm2 stop dance-panel",
@@ -25,6 +25,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
     "pm2": "^6.0.13",
+    "prettier": "^3.6.2",
     "typescript": "^5"
   }
 }

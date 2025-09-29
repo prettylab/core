@@ -8,8 +8,9 @@ export default function Content() {
       column
       sx={{
         backgroundColor: "white",
-        borderTopRightRadius: "24px",
+        borderTopRightRadius: { xs: "", xl: "24px" },
         borderBottomRightRadius: "24px",
+        borderBottomLeftRadius: { xs: "24px", xl: "" },
         flex: 1,
         py: 8,
         px: 12,

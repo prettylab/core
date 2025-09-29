@@ -8,7 +8,7 @@ type Props = {
 };
 
 export const metadata: Metadata = {
-  title: "Administracja - Zawody taneczne 2026",
+  title: "Administracja - FOCUS ON BATTLE",
 };
 
 export default function Layout({ children }: Props) {

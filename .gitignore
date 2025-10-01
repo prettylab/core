@@ -1,18 +1,1 @@
-#JS Stuff
-/node_modules
-/.next/
-/out/
-/build
-.DS_Store
-*.tsbuildinfo
-next-env.d.ts
-
-#Dev Stuff
-.idea
-
-#ENV files
-docker/.env
-src/env.ts
-
-#DB Stuff
-docker/mariadb
+node_modules

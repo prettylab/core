@@ -1,41 +1,43 @@
 {
-  "name": "dance-panel",
-  "version": "0.1.1",
-  "private": true,
-  "scripts": {
-    "dev": "next dev -p 4000 --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start -p 4000",
-    "lint": "eslint",
-    "pm2": "pm2 start npm --name dance-panel -- start",
-    "pm2:stop": "pm2 stop dance-panel",
-    "pm2:delete": "pm2 delete dance-panel",
-    "pm2:monitor": "pm2 monit"
+  "name": "@prettylab/design",
+  "version": "0.0.1-dev_1744383663648",
+  "description": "Design components for NextJS + MaterialUI stack",
+  "author": "onhq11",
+  "homepage": "https://github.com/prettylab/design#readme",
+  "bugs": {
+    "url": "https://github.com/prettylab/design/issues"
   },
-  "dependencies": {
-    "@emotion/cache": "^11.14.0",
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "@mui/material": "^7.3.2",
-    "@mui/material-nextjs": "^7.3.2",
-    "framer-motion": "^12.23.22",
-    "next": "15.5.4",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "react-hook-form": "^7.63.0",
-    "react-icons": "^5.5.0",
-    "react-mobile-picker": "^1.2.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prettylab/design.git"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "storybook dev -p 6006"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@prettylab/cli": "^0.1.0",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.5.4",
-    "pm2": "^6.0.13",
-    "prettier": "^3.6.2",
-    "typescript": "^5"
+    "@storybook/addon-essentials": "^8.6.12",
+    "@storybook/react": "^8.6.12",
+    "@storybook/react-vite": "^8.6.12",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.2",
+    "storybook": "^8.6.12",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.0.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }

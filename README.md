@@ -1,1 +1,1 @@
-# Dance panel
+# core

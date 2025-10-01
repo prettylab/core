@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 export interface FlexProps extends BoxProps {
   children?: ReactNode;
   wrap?: boolean;
+  alignStart?: boolean;
   alignCenter?: boolean;
   between?: boolean;
   around?: boolean;
@@ -16,6 +17,7 @@ export interface FlexProps extends BoxProps {
 export default function Flex({
   children,
   wrap,
+  alignStart,
   alignCenter,
   between,
   around,
@@ -27,6 +29,7 @@ export default function Flex({
 }: FlexProps) {
   const additionalSx = {
     ...(wrap && { flexWrap: "wrap" }),
+    ...(alignStart && { alignItems: "flex-start" }),
     ...(alignCenter && { alignItems: "center" }),
     ...(column && { flexDirection: "column" }),
     ...(between && { justifyContent: "space-between" }),

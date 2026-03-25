@@ -1,5 +1,5 @@
 export type Route = {
   href: string;
-  label: string;
+  label?: string;
   subLabel?: string;
 };

@@ -6,6 +6,7 @@ export type Config = {
   api: {
     message: Record<string, string>;
     matchMessageMeta: Record<string, MessageMeta>;
+    messagePath: string;
   };
   core: {
     settings: {

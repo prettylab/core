@@ -1,7 +1,7 @@
 import { TypographyProps } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { MdOutlineInsertPhoto } from "react-icons/md";
-import Flex, { FlexProps } from "../../layout/Flex/Flex";
+import Flex, { FlexProps } from "@prettylab/core/components/layout/Flex/Flex";
 import { IconBaseProps } from "react-icons";
 
 export type NoImageProps = {

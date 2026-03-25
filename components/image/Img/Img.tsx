@@ -1,7 +1,7 @@
 import { Box, SxProps } from "@mui/material";
 import { ImgHTMLAttributes } from "react";
-import { isBase64 } from "../../../utils/image/isBase64";
-import { addBase64Prefix } from "../../../utils/image/addBase64Prefix";
+import { isBase64 } from "@prettylab/core/utils/image/isBase64";
+import { addBase64Prefix } from "@prettylab/core/utils/image/addBase64Prefix";
 
 export type ImgProps = {
   src: string;

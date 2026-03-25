@@ -1,15 +1,9 @@
-import {
-  Autocomplete,
-  AutocompleteProps,
-  AutocompleteSlots,
-  Skeleton,
-  TextFieldProps,
-} from "@mui/material";
+import { Autocomplete, Skeleton, TextFieldProps } from "@mui/material";
 import InputText, {
   UncontrolledInputTextProps,
-} from "@/components/Form/Uncontrolled/InputText";
+} from "@prettylab/core/components/input/InputText";
 import Flex from "@prettylab/core/components/layout/Flex/Flex";
-import { ReactNode, useEffect, useMemo } from "react";
+import { ReactNode, useMemo } from "react";
 
 export type UncontrolledInputAutocompleteSlotProps = {
   textField?: UncontrolledInputTextProps & Partial<TextFieldProps>;

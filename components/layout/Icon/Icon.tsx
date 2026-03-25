@@ -1,5 +1,5 @@
 import { IconButtonProps } from "@mui/material";
-import IconButton from "../IconButton/IconButton";
+import IconButton from "@prettylab/core/components/layout/IconButton/IconButton";
 
 export type IconProps = {
   color?: string;

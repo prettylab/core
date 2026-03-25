@@ -6,10 +6,12 @@ import {
   SxProps,
 } from "@mui/material";
 import { useEffect, useState } from "react";
-import Flex, { FlexProps } from "../../layout/Flex/Flex";
-import NoImage, { NoImageProps } from "../NoImage/NoImage";
-import Img, { ImgProps } from "../Img/Img";
-import isClient from "../../../utils/ssr/isClient";
+import Flex, { FlexProps } from "@prettylab/core/components/layout/Flex/Flex";
+import NoImage, {
+  NoImageProps,
+} from "@prettylab/core/components/image/NoImage/NoImage";
+import Img, { ImgProps } from "@prettylab/core/components/image/Img/Img";
+import isClient from "@prettylab/core/utils/ssr/isClient";
 
 export type LazyLoadImageProps = {
   src: string;

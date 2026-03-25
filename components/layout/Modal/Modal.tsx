@@ -3,7 +3,6 @@ import {
   Dialog,
   DialogContent,
   DialogContentProps,
-  SxProps,
 } from "@mui/material";
 import { ReactNode } from "react";
 

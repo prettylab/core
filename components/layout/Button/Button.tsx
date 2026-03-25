@@ -8,8 +8,6 @@ import {
 } from "@mui/material";
 import MuiButton from "@mui/material/Button";
 import Link from "next/link";
-import { jsx } from "@emotion/react";
-import IntrinsicElements = jsx.JSX.IntrinsicElements;
 
 export type ButtonProps = {
   children?: ReactNode;
@@ -20,7 +18,7 @@ export type ButtonProps = {
 };
 
 export type ButtonSlotProps = {
-  link?: IntrinsicElements["a"];
+  link?: any;
   tooltip?: TooltipProps;
 };
 
